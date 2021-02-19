@@ -14,9 +14,9 @@
     animation: slide-in-bottom .4s;
 }
 
-:host>* {
-    /* margin-bottom: .5em; */
-}
+/* :host>* {
+    margin-bottom: .5em;
+} */
 
 .title {
     font-family: var(--secondary-font);
