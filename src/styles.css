@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600&display=swap');
+:root {
+    /* --accent: pink; */
+    --accent: #db8db4;
+    --primary-text: gray;
+    --primary-font: 'Montserrat', sans-serif;
+    --secondary-font: "Lobster", cursive;
+    /* --primary-font: 'Courier New', Courier, monospace; */
+    /* --primary-font: 'Open Sans', sans-serif; */
+}
+
+body {
+    overflow: hidden;
+    margin: 0;
+    background-color: var(--accent);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 900px) {
+	body {
+		background-color: white;
+	}
+}
+
+/* 
+random palette 
+#9e1461
+#9c1462
+#ea8bb4 <<< main
+#e887a9 ** same as above
+#da5583
+#b10421
+#b494a4 ** grayish nice
+#ec4581
+#c494ac **
+#d3165b
+#f7e5ed ** grayish
+*/

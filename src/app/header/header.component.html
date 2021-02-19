@@ -1,0 +1,33 @@
+<div class="brand" (click)="setActiveSection(0)" [routerLink]="['/']">
+    <img class="logo" src="../../assets/img/logo.svg" />
+    <div class="logo-text">
+        Boostly
+    </div>
+</div>
+
+<ul class="nav-links" [class.active]="menuActive">
+    <div class="section-progress" [style.width.em]="getProgress()"></div>
+
+    <li class="nav-link" (click)="setActiveSection(0)" [class.active]="activeSection == 0" [routerLink]="['/']">
+        Hem
+    </li>
+
+    <li class="nav-link" (click)="setActiveSection(1)" [class.active]="activeSection == 1" [routerLink]="['/']">
+        Wellness
+    </li>
+
+    <li class="nav-link" (click)="setActiveSection(2)" [class.active]="activeSection == 2" [routerLink]="['/']">
+        Om oss
+    </li>
+
+    <li class="nav-link register" (click)="setActiveSection(-1)" routerLinkActive="active" [routerLink]="['/register']">
+        <!-- <div class="progress"></div> -->
+        Intresseanmälan
+    </li>
+</ul>
+
+<div class="hamburger" [class.active]="menuActive" (click)="toggleMenu()">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+</div>

@@ -1,0 +1,32 @@
+:host {
+    height: 85vh;
+    overflow-y: scroll;
+    display: block;
+}
+
+:host>* {
+    opacity: .3;
+    height: 85vh;
+    transition: opacity .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: white;
+}
+
+.home {
+    background: orange;
+}
+
+.wellness {
+    background: green
+}
+
+.about-us {
+    background: purple
+}
+
+.active {
+    opacity: .6;
+}
