@@ -51,6 +51,21 @@
     height: 5px;
     width: 30px;
     background: var(--primary-text);
+    transition: transform .3s;
+}
+
+.hamburger.active .line:first-child {
+    -webkit-transform: rotate(315deg) translate(-7px, 6px);
+    transform: rotate(315deg) translate(-7px, 6px);
+}
+
+.hamburger.active .line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .line:last-child {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
 }
 
 .nav-links {
@@ -82,7 +97,6 @@
 .section-progress {
     display: none;
 }
-
 
 .nav-link {
     cursor: pointer;
